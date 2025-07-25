@@ -13,6 +13,16 @@ st.title("📈 Modern Portfolio Theory Optimiser")
 st.write("This application uses Monte Carlo simulation to find the optimal portfolios based on the principles of Modern Portfolio Theory.")
 
 # --- Sidebar for User Inputs ---
+
+st.sidebar.header("Black-Scholes Model")
+st.sidebar.markdown("""
+**Created by:**
+<a href="www.linkedin.com/in/kheelan-sarathee-319877261" target="_blank">
+    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="20" style="vertical-align:middle; margin-right: 5px;">
+    Kheelan Sarathee
+</a>
+""", unsafe_allow_html=True)
+
 with st.sidebar:
     st.header("Portfolio Inputs")
     
