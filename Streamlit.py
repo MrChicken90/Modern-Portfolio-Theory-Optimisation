@@ -8,8 +8,8 @@ import seaborn as sns
 import datetime as dt
 
 # --- Set up the Streamlit page ---
-st.set_page_config(page_title="Modern Portfolio Theory Optimizer", layout="wide")
-st.title("📈 Modern Portfolio Theory Optimizer")
+st.set_page_config(page_title="Modern Portfolio Theory Optimiser", layout="wide")
+st.title("📈 Modern Portfolio Theory Optimiser")
 st.write("This application uses Monte Carlo simulation to find the optimal portfolios based on the principles of Modern Portfolio Theory.")
 
 # --- Sidebar for User Inputs ---
@@ -121,8 +121,8 @@ if run_button and tickers:
             ax.scatter(max_sharpe_portfolio['Volatility'], max_sharpe_portfolio['Return'], color='red', marker='*', s=150, edgecolors='black', label='Max Sharpe Ratio')
             ax.scatter(min_vol_portfolio['Volatility'], min_vol_portfolio['Return'], color='blue', marker='X', s=150, edgecolors='black', label='Min Volatility')
             ax.set_title('Efficient Frontier')
-            ax.set_xlabel('Annualised Volatility')
-            ax.set_ylabel('Annualised Return')
+            ax.set_xlabel('Volatility')
+            ax.set_ylabel('Return')
             ax.legend()
             ax.grid(True, linestyle='--', alpha=0.6)
             st.pyplot(fig)
