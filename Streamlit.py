@@ -14,7 +14,7 @@ st.write("This application uses Monte Carlo simulation to find the optimal portf
 
 # --- Sidebar for User Inputs ---
 
-st.sidebar.header("Black-Scholes Model")
+st.sidebar.header("Portfolio Optimiser")
 st.sidebar.markdown("""
 **Created by:**
 <a href="www.linkedin.com/in/kheelan-sarathee-319877261" target="_blank">
